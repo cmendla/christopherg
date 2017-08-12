@@ -24,6 +24,7 @@
   <%= stylesheet_link_tag "style" %>                        <!-- From template   -->
   <%= stylesheet_link_tag "style.ie7" %>                    <!-- From template   -->
   <%= stylesheet_link_tag "style.responsive" %>             <!-- From template   -->
+  <%= stylesheet_link_tag "custom.css" %>					<!-- Custom CSS -->
   <%= javascript_include_tag "script.js" %>                 <!-- From template   -->
 <!--  < %= javascript_include_tag "jquery.are-you-sure" %>    -->   <!-- Dirty form checker   -->
 
@@ -100,12 +101,11 @@
                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
 
 </div>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+       
 
-
+<%= render :partial => 'shared/message'%>
 <%= yield %>
-
+<p class="notice"><%= notice %></p>  <p class="alert"><%= alert %></p>
 
 
 
