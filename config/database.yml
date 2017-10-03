@@ -10,7 +10,17 @@ default: &default
 
 development:
   <<: *default
-  database: rails_project_development
+#  database: rails_project_development
+
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  host: localhost
+  username: christopherg
+  password: '!247Ejt14'
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
