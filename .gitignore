@@ -16,3 +16,5 @@
 /tmp
 /.metadata
 /.metadata/*
+/public/assets
+/public/assets/.*
