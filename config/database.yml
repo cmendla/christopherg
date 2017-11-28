@@ -10,7 +10,9 @@ default: &default
 
 development:
   <<: *default
-  database: rails_project_development
+  database: christopherg
+  username: christopherg
+  password: ruby2017
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

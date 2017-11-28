@@ -1,10 +1,11 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'jquery-turbolinks'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.2'
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 0.15'
+# gem 'rails', '4.2.5.2'
+# gem 'rails', '5.1.4'
+gem 'rails', '5.0.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,6 +23,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# gem 'json', '2.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -46,4 +49,9 @@ group :development do
 end
 
 
-gem 'unicorn'
+# group :production do
+  # Use postgresql as the database for Active Record
+  gem 'pg', '~> 0.15'
+  gem 'unicorn'
+# end  
+  
