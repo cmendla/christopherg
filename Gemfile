@@ -49,8 +49,8 @@ group :development do
   # gem 'web-console', '~> 2.0'
   # TODO: add webconsole back
 
-  gem 'pg', '~> 1.2.3'
-  
+  # gem 'pg', '~> 1.2.3'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
@@ -58,7 +58,7 @@ end
 
 # group :production, :development, :test do
   # Use postgresql as the database for Active Record
-  gem 'pg', '~> 1.2.3'
+  gem 'pg', '0.18'
   gem 'unicorn'
 # end  
   
