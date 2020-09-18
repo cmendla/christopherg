@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actioncable (5.1.4)
       actionpack (= 5.1.4)
@@ -172,9 +172,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
-  pg (~> 0.15)
+  pg (~> 0.21.0)
   rails (= 5.1.4)
-  sass-rails
+  sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
   turbolinks

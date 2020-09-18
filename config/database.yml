@@ -10,16 +10,18 @@ default: &default
 
 development:
   <<: *default
-  database: christopherg
-  username: christopherg
-  password: ruby2017
+  database: christopherg_dev
+  username: christopherg_dev
+  password: Ruby2017dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_project_test
+  database: christopherg_test
+  username: christopherg_test
+  password: Ruby2017test
 
 production:
   <<: *default
