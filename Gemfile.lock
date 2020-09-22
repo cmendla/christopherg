@@ -80,7 +80,7 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    pg (1.2.3)
+    pg (0.18.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -162,7 +162,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   nokogiri
-  pg (~> 1.2.3)
+  pg (= 0.18)
   rails (= 5.1.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
