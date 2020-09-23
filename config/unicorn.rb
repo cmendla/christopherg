@@ -8,17 +8,14 @@ working_directory app_dir
 # gem_path = ~/home/cgmadmin/.rvm/rubies/ruby-2.7.1/bin/ruby
 # gem_home = ~/home/cgmadmin/.rvm/rubies
 # Set unicorn options
+
+shared_dir = "#{app_dir}/shared"
+working_directory app_dir
+
+# Set unicorn options
 worker_processes 2
 preload_app true
 timeout 30
-puts "--------------------"
-puts app_dir
-puts app_path
-puts shared_dir
-# puts gem_path
-# puts gem_home
-puts "------------------------------"
-
 
 # Path for the Unicorn socket
 listen "#{shared_dir}/sockets/unicorn.sock", :backlog => 64
@@ -29,4 +26,3 @@ stdout_path "#{shared_dir}/log/unicorn.stdout.log"
 
 # Set proccess id path
 pid "#{shared_dir}/pids/unicorn.pid"
-

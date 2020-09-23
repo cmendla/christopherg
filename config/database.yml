@@ -25,6 +25,11 @@ test:
 
 production:
   <<: *default
-  database: rails_project_production
-  username: rails
+  host: ''
+  database: cgmadmin
+  username: cgmadmin
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  
+  # database: rails_project_production
+  # username: rails
+  # password: <%= ENV['APP_DATABASE_PASSWORD'] %>
