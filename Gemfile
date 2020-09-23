@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jquery-turbolinks'
 gem 'rails', '5.1.4'
-ruby "2.7.1" 
+ruby "2.7.0" 
 
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 
