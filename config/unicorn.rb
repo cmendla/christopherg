@@ -1,10 +1,19 @@
 # set path to the application
 app_dir = File.expand_path("../..", __FILE__)
+app_path = File.expand_path(File.dirname(__FILE__) + '/..')
+shared_dir = "#{app_dir}/shared"
+working_directory app_dir
+# require 'rvm'
+# RVM.use_from_path! File.dirname(File.dirname(__FILE__))
+# gem_path = ~/home/cgmadmin/.rvm/rubies/ruby-2.7.1/bin/ruby
+# gem_home = ~/home/cgmadmin/.rvm/rubies
+# Set unicorn options
+
 shared_dir = "#{app_dir}/shared"
 working_directory app_dir
 
 # Set unicorn options
-worker_processes auto
+worker_processes 2
 preload_app true
 timeout 30
 
