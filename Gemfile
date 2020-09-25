@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jquery-turbolinks'
 gem 'rails', '5.1.4'
-ruby "2.7.0" 
+ruby "2.7.1" 
 
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 
@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -60,6 +60,6 @@ end
 # group :production, :development, :test do
   # Use postgresql as the database for Active Record
   gem 'pg', '0.18'
-  gem 'unicorn'
+  # gem 'unicorn'
 # end  
   
