@@ -30167,20 +30167,19 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-sheet-1 {min-height: 194px}
 .u-header .u-image-1 {margin: 11px auto 0 11px}
 .u-header .u-logo-image-1 {max-width: 90px; max-height: 90px}
-.u-header .u-text-1 {font-weight: 700; margin: -90px auto 0 129px}
-.u-header .u-text-2 {font-size: 2.25rem; font-weight: 700; margin: 20px auto 0 129px}
-.u-header .u-menu-1 {margin: 24px auto 0 115px}
+.u-header .u-text-1 {font-weight: 700; font-size: 1rem; margin: -90px auto 0 129px}
+.u-header .u-text-2 {font-size: 2.25rem; font-weight: 700; margin: 22px 313px 0 184px}
+.u-header .u-menu-1 {margin: 22px auto 0 115px}
 .u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0}
 .u-header .u-nav-2 {font-size: 1rem; letter-spacing: 0} 
 @media (max-width: 1199px){ .u-header .u-image-1 {margin-left: 0; width: 64px; height: 32px}
-.u-header .u-text-1 {font-size: 1rem}
 .u-header .u-menu-1 {width: auto; margin-left: 0} }
 
 @media (max-width: 767px){ .u-header .u-image-1 {width: auto} }
 @media (max-width: 575px){ .u-header .u-sheet-1 {min-height: 176px}
 .u-header .u-image-1 {margin-top: 22px; margin-right: 272px}
 .u-header .u-text-1 {font-size: 0.625rem}
-.u-header .u-text-2 {font-size: 0.875rem}
+.u-header .u-text-2 {font-size: 0.875rem; margin-right: 213px; margin-left: 84px}
 .u-header .u-menu-1 {margin-bottom: 16px} }
  .u-footer {background-image: none}
 .u-footer .u-sheet-1 {min-height: 120px}
