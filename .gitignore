@@ -17,3 +17,6 @@
 /.metadata
 /.metadata/*
 public
+
+# ignore vscode files
+.vscode
