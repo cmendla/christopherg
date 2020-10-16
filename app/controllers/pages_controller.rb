@@ -7,6 +7,10 @@ class PagesController < ApplicationController
     
   end
 
+  def download_file(file_name)
+   send_file("#{Rails.root}/public/#{file_name}")
+  end
+
   # GET /pages
   # GET /pages.json
   def index
@@ -66,6 +70,9 @@ class PagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
