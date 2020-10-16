@@ -1,22 +1,81 @@
-<div >
-	<nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-	<div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
-	<a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom 
-	u-custom-top-bottom-menu-spacing u-nav-link u-text-active-grey-10 
-	u-text-hover-palette-2-base" href="#">
+<nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+  <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; text-transform: uppercase; font-weight: 500;">
+  	<a class="u-active-black u-border-7 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3" href="#">
+		<svg>
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+		</svg>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+					<rect y="1" width="16" height="2"></rect>
+					<rect y="7" width="16" height="2"></rect>
+					<rect y="13" width="16" height="2"></rect>
+				</symbol>
+			</defs>
+		</svg>
+	</a>
+  </div>
 
-	<li><%= link_to "Home", "/home" %></li> 
-   
-    <li><%= link_to "Bio and Resume", "/bio_and_resume", class: "active" %>
-        <ul class="active">
-			<li><%= link_to "Goals", "/bio_and_resume/goals" %></li>
-			<li><%= link_to "My Resumes", "/bio_and_resume/my_resumes" %></li>
-			<li><%= link_to "Portfolios", "/bio_and_resume/portfolios" %></li>
-			<li><%= link_to "Professional Bio", "/bio_and_resume/professional_bio" %></li>
-			<li><%= link_to "Skills", "/bio_and_resume/skills"%></li>
-			<li><%= link_to "Web Presence", "/bio_and_resume/web_presence" %></li>
-		</ul>
+<div class="u-nav-container">
+  <ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/home">Home</a>
 	</li>
-	</nav>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/goals">Goals</a>
+	</li>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/my_resumes">Resumes</a>
+	</li>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/portfolios">Portfolio</a>
+	</li>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/professional_bio">Bio</a>
+	</li>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/skills">Skills</a>
+	</li>
+	<li class="u-nav-item">
+		<a class="u-active-black u-border-3 u-border-active-white u-border-hover-palette-1-light-3 u-border-palette-1-base u-border-radius-7 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-dark-3 u-text-active-white u-text-hover-black u-text-palette-1-light-3"
+		href="/bio_and_resume/web_presence">Web Presence</a>
+	</li> 
   </ul>
 </div>
+
+<div class="u-nav-container-collapse">
+  <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+	<div class="u-menu-close"></div>
+		<ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/home">Home</a>				
+			</li>
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/goals">Goals</a>				
+			</li>
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/my_resumes">Resumes</a>				
+			</li>
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/portfolios">Portfolio</a>				
+			</li>
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/professional_bio">Bio</a>				
+			</li>
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/skills">Skills</a>				
+			</li>			
+			<li class="u-nav-item">
+				<a class="u-button-style u-nav-link" href="/bio_and_resume/web_presence">Web Presence</a>			
+			</li>				
+		</ul>
+  </div>
+  <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+ </div>
+</nav>

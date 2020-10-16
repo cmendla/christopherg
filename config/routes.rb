@@ -15,6 +15,7 @@ Rails.application.routes.draw do
    get 'bio_and_resume/professional_bio' => 'pages#professional_bio'
    get 'bio_and_resume/web_presence' => 'pages#web_presence'
    get 'bio_and_resume/skills' => 'pages#skills'
+   get 'index_temp' => 'pages#index_temp'
    #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
    get 'pages/download_file'
 

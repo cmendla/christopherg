@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def download_file(file_name)
+    # TODO: see if this is really required
    send_file("#{Rails.root}/public/#{file_name}")
   end
 
