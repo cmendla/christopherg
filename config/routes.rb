@@ -16,7 +16,9 @@ Rails.application.routes.draw do
    get 'bio_and_resume/web_presence' => 'pages#web_presence'
    get 'bio_and_resume/skills' => 'pages#skills'
    #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
-   
+   get 'pages/download_file'
+
+
   ##  devise_scope :cgmuser do 
   ###    get "/cgmusers/sign_out" => "devise/sessions#destroy" 
    ## end 
