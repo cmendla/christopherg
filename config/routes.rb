@@ -13,7 +13,6 @@ Rails.application.routes.draw do
    get 'bio_and_resume/our_facebook_page' => 'pages#our_business_facebook_page'
    get 'bio_and_resume/portfolios' => 'pages#portfolios'
    get 'bio_and_resume/professional_bio' => 'pages#professional_bio'
-   get 'bio_and_resume/web_presence' => 'pages#web_presence'
    get 'bio_and_resume/skills' => 'pages#skills'
    get 'index_temp' => 'pages#index_temp'
    #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
