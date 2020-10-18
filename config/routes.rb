@@ -8,7 +8,6 @@ Rails.application.routes.draw do
    root 'pages#home'
    get 'home' => 'pages#home'
    get 'bio_and_resume' => 'pages#bio_resume'
-   get 'bio_and_resume/goals' => 'pages#goals'
    get 'bio_and_resume/my_resumes' => 'pages#my_resumes'
    get 'bio_and_resume/our_facebook_page' => 'pages#our_business_facebook_page'
    get 'bio_and_resume/portfolios' => 'pages#portfolios'
