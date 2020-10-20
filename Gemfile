@@ -4,19 +4,19 @@ gem 'jquery-turbolinks'
 gem 'rails', '5.1.4'
 ruby "2.6.5" 
 
-gem 'coffee-rails' # Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '4.2.2' # TODO - see if coffeescript can be removed
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jquery-rails' # Use jquery as the JavaScript library
-gem 'nokogiri'
+gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
+gem 'nokogiri', '1.10.10'
 gem 'pg', '0.18'
 gem 'puma', '~> 4.1' # Use Puma as the app servber
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
-gem 'turbolinks' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'uglifier' # Use Uglifier as compressor for JavaScript assets
+gem 'turbolinks', '5.2.1' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'uglifier', '4.2.0' # Use Uglifier as compressor for JavaScript assets
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 11.1.3'
 end
 
 group :doc do
@@ -29,5 +29,5 @@ group :development do
   # TODO: add webconsole back
 
   gem 'rubocop', '~> 0.93.1', :require => false
-  gem 'spring' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
