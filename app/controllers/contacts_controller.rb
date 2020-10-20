@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   before_action :set_contact, :only => [:show, :edit, :update, :destroy]
 
   # -------------------------------------- index -----------------------
-  
+
   # GET /contacts
   # GET /contacts.json
   def index
@@ -21,8 +21,8 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
-  end   
-  
+  end
+
   # ---------------------------------- Edit------------------------------------
   # GET /contacts/1/edit
   def edit
@@ -34,15 +34,14 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
-    
-   #    $contact_name = params[:name]
-  
-   $contact_name = @contact.name
-   $contact_phone = @contact.phone
-   $contact_email = @contact.email
-   $contact_comment = @contact.comment
-    
-    
+
+    #    $contact_name = params[:name]
+
+    $contact_name = @contact.name
+    $contact_phone = @contact.phone
+    $contact_email = @contact.email
+    $contact_comment = @contact.comment
+
     respond_to do |format|
       if @contact.save
         # MAILER - the line below sends data from the help request form through the email.
@@ -82,13 +81,13 @@ class ContactsController < ApplicationController
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_contact
-      @contact = Contact.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_contact
+    @contact = Contact.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def contact_params
-      params.require(:contact).permit(:name, :email, :phone, :comment)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def contact_params
+    params.require(:contact).permit(:name, :email, :phone, :comment)
+  end
 end
