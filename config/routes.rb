@@ -1,25 +1,23 @@
 Rails.application.routes.draw do
- 
-  
   #  devise_for :cgmusers
   #  resources :contacts
   resources :pages
-  
-   root 'pages#home'
-   get 'home' => 'pages#home'
-   get 'bio_and_resume' => 'pages#bio_resume'
-   get 'bio_and_resume/our_facebook_page' => 'pages#our_business_facebook_page'
-   get 'bio_and_resume/portfolios' => 'pages#portfolios'
-   get 'bio_and_resume/professional_bio' => 'pages#professional_bio'
-   get 'bio_and_resume/skills' => 'pages#skills'
-   get 'index_temp' => 'pages#index_temp'
-   #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
-   get 'pages/download_file'
 
-  ##  devise_scope :cgmuser do 
-  ###    get "/cgmusers/sign_out" => "devise/sessions#destroy" 
-  ## end 
-   
+  root 'pages#home'
+  get 'home' => 'pages#home'
+  get 'bio_and_resume' => 'pages#bio_resume'
+  get 'bio_and_resume/our_facebook_page' => 'pages#our_business_facebook_page'
+  get 'bio_and_resume/portfolios' => 'pages#portfolios'
+  get 'bio_and_resume/professional_bio' => 'pages#professional_bio'
+  get 'bio_and_resume/skills' => 'pages#skills'
+  get 'index_temp' => 'pages#index_temp'
+  # get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
+  get 'pages/download_file'
+
+  ##  devise_scope :cgmuser do
+  ###    get "/cgmusers/sign_out" => "devise/sessions#destroy"
+  ## end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

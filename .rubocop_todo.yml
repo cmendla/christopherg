@@ -78,8 +78,8 @@ Bundler/OrderedGems:
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, IndentationWidth.
 # SupportedStyles: special_inside_parentheses, consistent, align_braces
-Layout/FirstHashElementIndentation:
-  Exclude:
+# Layout/FirstHashElementIndentation:
+#  Exclude:
     - 'config/environments/production.rb'
 
 # Offense count: 7
@@ -88,43 +88,32 @@ Layout/FirstHashElementIndentation:
 # SupportedHashRocketStyles: key, separator, table
 # SupportedColonStyles: key, separator, table
 # SupportedLastArgumentHashStyles: always_inspect, always_ignore, ignore_implicit, ignore_explicit
-Layout/HashAlignment:
-  Exclude:
+# Layout/HashAlignment:
+#   Exclude:
     - 'config/environments/production.rb'
 
-# Offense count: 22
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: normal, indented_internal_methods
-Layout/IndentationConsistency:
-  Exclude:
-    - 'Gemfile'
-    - 'app/controllers/application_controller.rb'
-    - 'app/controllers/contacts_controller.rb'
-    - 'app/controllers/pages_controller.rb'
-    - 'config/environments/production.rb'
-    - 'config/routes.rb'
+
 
 # Offense count: 6
 # Cop supports --auto-correct.
 # Configuration parameters: Width, IgnoredPatterns.
-Layout/IndentationWidth:
-  Exclude:
+# Layout/IndentationWidth:
+#  Exclude:
     - 'app/controllers/application_controller.rb'
     - 'app/controllers/contacts_controller.rb'
     - 'app/controllers/pages_controller.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
-Layout/InitialIndentation:
-  Exclude:
+# Layout/InitialIndentation:
+#  Exclude:
     - 'config/initializers/assets.rb'
 
 # Offense count: 4
 # Cop supports --auto-correct.
 # Configuration parameters: AllowDoxygenCommentStyle, AllowGemfileRubyComment.
-Layout/LeadingCommentSpace:
-  Exclude:
+# Layout/LeadingCommentSpace:
+#  Exclude:
     - 'Gemfile'
     - 'config/initializers/assets.rb'
     - 'config/routes.rb'
@@ -133,30 +122,30 @@ Layout/LeadingCommentSpace:
 # Cop supports --auto-correct.
 # Configuration parameters: AllowForAlignment, EnforcedStyleForExponentOperator.
 # SupportedStylesForExponentOperator: space, no_space
-Layout/SpaceAroundOperators:
-  Exclude:
+# Layout/SpaceAroundOperators:
+#  Exclude:
     - 'config/environments/production.rb'
 
 # Offense count: 6
 # Cop supports --auto-correct.
-Layout/SpaceInsidePercentLiteralDelimiters:
-  Exclude:
+# Layout/SpaceInsidePercentLiteralDelimiters:
+#  Exclude:
     - 'config/initializers/assets.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: final_newline, final_blank_line
-Layout/TrailingEmptyLines:
-  Exclude:
+# Layout/TrailingEmptyLines:
+#  Exclude:
     - 'app/models/application_record.rb'
     - 'config/initializers/assets.rb'
 
 # Offense count: 26
 # Cop supports --auto-correct.
 # Configuration parameters: AllowInHeredoc.
-Layout/TrailingWhitespace:
-  Exclude:
+# Layout/TrailingWhitespace:
+#  Exclude:
     - 'Gemfile'
     - 'app/controllers/contacts_controller.rb'
     - 'app/controllers/pages_controller.rb'

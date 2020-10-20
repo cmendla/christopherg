@@ -3,12 +3,11 @@ class PagesController < ApplicationController
 
   # ---------------------------  home ----------------------------
   def home
-    
   end
 
   def download_file(file_name)
-   # TODO: see if this is really required
-   send_file("#{Rails.root}/public/#{file_name}")
+    # TODO: see if this is really required
+    send_file("#{Rails.root}/public/#{file_name}")
   end
 
   # GET /pages
@@ -73,13 +72,13 @@ class PagesController < ApplicationController
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_page
-      @page = Page.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_page
+    @page = Page.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def page_params
-      params.fetch(:page, {})
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def page_params
+    params.fetch(:page, {})
+  end
 end
