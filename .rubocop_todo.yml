@@ -28,14 +28,14 @@ Bundler/OrderedGems:
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AllowAdjacentOneLineDefs, NumberOfEmptyLines.
-Layout/EmptyLineBetweenDefs:
-  Exclude:
+# Layout/EmptyLineBetweenDefs:
+#  Exclude:
     - 'app/controllers/contacts_controller.rb'
 
 # Offense count: 9
 # Cop supports --auto-correct.
-Layout/EmptyLines:
-  Exclude:
+# Layout/EmptyLines:
+#  Exclude:
     - 'Gemfile'
     - 'app/controllers/pages_controller.rb'
     - 'config/initializers/assets.rb'
@@ -45,8 +45,8 @@ Layout/EmptyLines:
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: around, only_before
-Layout/EmptyLinesAroundAccessModifier:
-  Exclude:
+# Layout/EmptyLinesAroundAccessModifier:
+#  Exclude:
     - 'app/controllers/contacts_controller.rb'
     - 'app/controllers/pages_controller.rb'
 
@@ -54,24 +54,24 @@ Layout/EmptyLinesAroundAccessModifier:
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
+# Layout/EmptyLinesAroundBlockBody:
+#  Exclude:
     - 'db/schema.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines, beginning_only, ending_only
-Layout/EmptyLinesAroundClassBody:
-  Exclude:
+# Layout/EmptyLinesAroundClassBody:
+#  Exclude:
     - 'app/controllers/application_controller.rb'
     - 'test/controllers/home_controller_test.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AllowForAlignment, AllowBeforeTrailingComments, ForceEqualSignAlignment.
-Layout/ExtraSpacing:
-  Exclude:
+# Layout/ExtraSpacing:
+#  Exclude:
     - 'bin/setup'
 
 # Offense count: 2

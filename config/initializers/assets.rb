@@ -10,7 +10,6 @@
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # Rails.application.config.assets.precompile += %w( search.js )
 
-
   #   Rails.application.config.assets.compile = true                                    #for Production
   Rails.application. config.assets.precompile = ['*.js', '*.css', '*.css.erb']      #for Production
   Rails.application.config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]        #for Production

@@ -16,7 +16,6 @@ Rails.application.routes.draw do
    #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
    get 'pages/download_file'
 
-
   ##  devise_scope :cgmuser do 
   ###    get "/cgmusers/sign_out" => "devise/sessions#destroy" 
   ## end 

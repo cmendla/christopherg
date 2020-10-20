@@ -6,5 +6,4 @@ class ApplicationController < ActionController::Base
 def home
   render :layout => 'alternate'
 end
-
 end
