@@ -9,14 +9,14 @@ class ContactsController < ApplicationController
     @contacts = Contact.all
   end
 
-# -------------------------------------- show -----------------------------
+  # -------------------------------------- show -----------------------------
 
   # GET /contacts/1
   # GET /contacts/1.json
   def show
   end
 
-# ----------------------------------- new ----------------------------------
+  # ----------------------------------- new ----------------------------------
 
   # GET /contacts/new
   def new
@@ -25,19 +25,19 @@ class ContactsController < ApplicationController
   
   
   
-# ---------------------------------- Edit------------------------------------
+  # ---------------------------------- Edit------------------------------------
   # GET /contacts/1/edit
   def edit
   end
 
-#----------------------------------- Create --------------------------------
+  #----------------------------------- Create --------------------------------
 
   # POST /contacts
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
     
-#    $contact_name = params[:name]
+   #    $contact_name = params[:name]
   
    $contact_name = @contact.name
    $contact_phone = @contact.phone
