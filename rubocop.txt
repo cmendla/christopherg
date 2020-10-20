@@ -1,0 +1,103 @@
+Inspecting 41 files
+C.CC.C...C...........C.........CC....C...
+
+Offenses:
+
+Gemfile:29:25: C: Style/HashSyntax: Use hash rockets syntax.
+gem 'sdoc', '~> 0.4.0', group: :doc
+                        ^^^^^^
+Gemfile:60:31: C: Style/HashSyntax: Use hash rockets syntax.
+  gem 'rubocop', '~> 0.93.1', require: false
+                              ^^^^^^^^
+app/controllers/application_controller.rb:4:24: C: Style/HashSyntax: Use hash rockets syntax.
+  protect_from_forgery with: :exception
+                       ^^^^^
+app/controllers/contacts_controller.rb:2:31: C: Style/HashSyntax: Use hash rockets syntax.
+  before_action :set_contact, only: [:show, :edit, :update, :destroy]
+                              ^^^^^
+app/controllers/contacts_controller.rb:52:44: C: Style/HashSyntax: Use hash rockets syntax.
+        format.html { redirect_to '/home', notice: 'Contact was successfully created.' }
+                                           ^^^^^^^
+app/controllers/contacts_controller.rb:53:37: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :created, location: '/home' }
+                                    ^^^^^^^
+app/controllers/contacts_controller.rb:53:55: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :created, location: '/home' }
+                                                      ^^^^^^^^^
+app/controllers/contacts_controller.rb:56:30: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+                             ^^^^^
+app/controllers/contacts_controller.rb:56:53: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+                                                    ^^^^^^^
+app/controllers/contacts_controller.rb:66:45: C: Style/HashSyntax: Use hash rockets syntax.
+        format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
+                                            ^^^^^^^
+app/controllers/contacts_controller.rb:67:37: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :ok, location: @contact }
+                                    ^^^^^^^
+app/controllers/contacts_controller.rb:67:50: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :ok, location: @contact }
+                                                 ^^^^^^^^^
+app/controllers/contacts_controller.rb:70:30: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+                             ^^^^^
+app/controllers/contacts_controller.rb:70:53: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+                                                    ^^^^^^^
+app/controllers/contacts_controller.rb:80:47: C: Style/HashSyntax: Use hash rockets syntax.
+      format.html { redirect_to contacts_url, notice: 'Contact was successfully destroyed.' }
+                                              ^^^^^^^
+app/controllers/pages_controller.rb:2:28: C: Style/HashSyntax: Use hash rockets syntax.
+  before_action :set_page, only: [:show, :edit, :update, :destroy]
+                           ^^^^^
+app/controllers/pages_controller.rb:42:42: C: Style/HashSyntax: Use hash rockets syntax.
+        format.html { redirect_to @page, notice: 'Page was successfully created.' }
+                                         ^^^^^^^
+app/controllers/pages_controller.rb:43:37: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :created, location: @page }
+                                    ^^^^^^^
+app/controllers/pages_controller.rb:43:55: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :created, location: @page }
+                                                      ^^^^^^^^^
+app/controllers/pages_controller.rb:46:30: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+                             ^^^^^
+app/controllers/pages_controller.rb:46:50: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+                                                 ^^^^^^^
+app/controllers/pages_controller.rb:56:42: C: Style/HashSyntax: Use hash rockets syntax.
+        format.html { redirect_to @page, notice: 'Page was successfully updated.' }
+                                         ^^^^^^^
+app/controllers/pages_controller.rb:57:37: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :ok, location: @page }
+                                    ^^^^^^^
+app/controllers/pages_controller.rb:57:50: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render :show, status: :ok, location: @page }
+                                                 ^^^^^^^^^
+app/controllers/pages_controller.rb:60:30: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+                             ^^^^^
+app/controllers/pages_controller.rb:60:50: C: Style/HashSyntax: Use hash rockets syntax.
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+                                                 ^^^^^^^
+app/controllers/pages_controller.rb:70:44: C: Style/HashSyntax: Use hash rockets syntax.
+      format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
+                                           ^^^^^^^
+app/views/pages/index.json.jbuilder:3:27: C: Style/HashSyntax: Use hash rockets syntax.
+  json.url page_url(page, format: :json)
+                          ^^^^^^^
+config/environments/production.rb:72:48: C: Style/HashSyntax: Use hash rockets syntax.
+  config.action_mailer.default_url_options = { host: host }
+                                               ^^^^^
+config/initializers/session_store.rb:3:55: C: Style/HashSyntax: Use hash rockets syntax.
+Rails.application.config.session_store :cookie_store, key: '_rails_project_session'
+                                                      ^^^^
+config/initializers/wrap_parameters.rb:8:19: C: Style/HashSyntax: Use hash rockets syntax.
+  wrap_parameters format: [:json] if respond_to?(:wrap_parameters)
+                  ^^^^^^^
+db/schema.rb:13:29: C: Style/HashSyntax: Use hash rockets syntax.
+ActiveRecord::Schema.define(version: 0) do
+                            ^^^^^^^^
+
+41 files inspected, 32 offenses detected, 32 offenses auto-correctable

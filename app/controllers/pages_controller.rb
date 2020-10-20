@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, :only => [:show, :edit, :update, :destroy]
 
 
   # ---------------------------  home ----------------------------
@@ -39,11 +39,11 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to @page, notice: 'Page was successfully created.' }
-        format.json { render :show, status: :created, location: @page }
+        format.html { redirect_to @page, :notice => 'Page was successfully created.' }
+        format.json { render :show, :status => :created, :location => @page }
       else
         format.html { render :new }
-        format.json { render json: @page.errors, status: :unprocessable_entity }
+        format.json { render :json => @page.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -53,11 +53,11 @@ class PagesController < ApplicationController
   def update
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to @page, notice: 'Page was successfully updated.' }
-        format.json { render :show, status: :ok, location: @page }
+        format.html { redirect_to @page, :notice => 'Page was successfully updated.' }
+        format.json { render :show, :status => :ok, :location => @page }
       else
         format.html { render :edit }
-        format.json { render json: @page.errors, status: :unprocessable_entity }
+        format.json { render :json => @page.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -67,7 +67,7 @@ class PagesController < ApplicationController
   def destroy
     @page.destroy
     respond_to do |format|
-      format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
+      format.html { redirect_to pages_url, :notice => 'Page was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
