@@ -16,9 +16,9 @@ Bundler/OrderedGems:
 
 # Offense count: 16
 # Cop supports --auto-correct.
-Layout/CommentIndentation:
+#Layout/CommentIndentation:
   Exclude:
-    - 'Gemfile'
+#    - 'Gemfile'
     - 'app/controllers/contacts_controller.rb'
     - 'app/controllers/pages_controller.rb'
     - 'config/environments/production.rb'
