@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
  
   
-#  devise_for :cgmusers
-#  resources :contacts
+  #  devise_for :cgmusers
+  #  resources :contacts
   resources :pages
   
    root 'pages#home'
@@ -16,10 +16,9 @@ Rails.application.routes.draw do
    #get '/cgmusers/sign_out'  => 'devise/sessions#destroy'
    get 'pages/download_file'
 
-
   ##  devise_scope :cgmuser do 
   ###    get "/cgmusers/sign_out" => "devise/sessions#destroy" 
-   ## end 
+  ## end 
    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
