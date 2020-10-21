@@ -4,7 +4,7 @@ gem 'jquery-turbolinks'
 gem 'rails', '5.1.4'
 ruby '2.6.5'
 
-gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
+# gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
 gem 'nokogiri', '1.10.10'
