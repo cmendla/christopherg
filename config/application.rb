@@ -8,7 +8,6 @@ Bundler.require(*Rails.groups)
 
 module RailsProject
   class Application < Rails::Application
-    
     config.generators.javascript_engine = :js # Switch from coffeescript to js
 
     # Settings in config/environments/* take precedence over those specified here.
