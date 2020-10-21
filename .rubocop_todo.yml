@@ -270,8 +270,8 @@ Style/PercentLiteralDelimiters:
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
 # SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
+# Style/StringLiterals:
+#  Exclude:
     - 'Gemfile'
     - 'bin/setup'
     - 'config/environments/production.rb'
