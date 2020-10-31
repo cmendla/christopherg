@@ -20,6 +20,10 @@ group :development, :test do
   gem 'byebug', '~> 11.1.3'
 end
 
+group :test do
+  gem 'simplecov', require: false
+end  
+
 group :doc do
   gem 'sdoc', '~> 0.4.0' # bundle exec rake doc:rails generates the API under doc/api.
 end

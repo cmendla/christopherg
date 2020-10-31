@@ -24,3 +24,6 @@ public/assets/*
 
 # ignore vscode files
 .vscode
+
+# ignore simplecov coverage folder
+/coverage/*
