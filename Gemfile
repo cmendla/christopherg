@@ -16,11 +16,12 @@ gem 'uglifier', '4.2.0' # Use Uglifier as compressor for JavaScript assets
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'rspec-rails', '~> 4.0.1'
   gem 'byebug', '~> 11.1.3'
+  gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :test do
+  gem 'capybara'
   gem 'simplecov', require: false
 end  
 
