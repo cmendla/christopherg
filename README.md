@@ -4,7 +4,7 @@ This is the online Ruby on Rails Portfolio site of Christopher G. Mendla. It is 
 * This repo is public. 
 * The url for the site is http://christopherg.mendla.com
 * The site is NOT https. 
-* hosted on Digital Ocean running Ubuntu 18.2
+* Hosted on Digital Ocean running Ubuntu 18.2
 ## History
 This application was begun around 2017 and not maintained until October 2020. Since 10/20, I have been actively developing the app. 
 ## Current Status
@@ -14,8 +14,17 @@ This application was begun around 2017 and not maintained until October 2020. Si
 * **Database**: Postgres (Not implemented in production)
 * **Testing**: Rspec, Simplecov, Capybara
 * **Rubocop**: ~ 30 remaining issues
+* **Brakeman**: Not installed yet
+## Cloning and testing
+* Clone this repository
+* Set the current ruby version. Currently 2.6.5 (check Gemfile to be sure)
+* Development database: christopherg_dev
+* Test database: christopherg_test
+* `bundle exec rspec` to run the test suite
+* `bundle exec puma` to run the puma server in development
+
 ## Roadmap
-* Testing: Add testing to get to at least 95% coverage and then maintain that testing. 
+* **Testing**: Add testing to get to at least 95% coverage and then maintain that testing. 
 	* Add Factorybot when the database is active
 	* Add system tests
 * **Database**:
