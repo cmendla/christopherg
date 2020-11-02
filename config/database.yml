@@ -12,7 +12,7 @@ development:
   <<: *default
   database: christopherg_dev
   username: christopherg_dev
-  password: Ruby2017dev
+  password: <%= ENV['APP_DATABASE_PASSWORD_DEV'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,7 +21,7 @@ test:
   <<: *default
   database: christopherg_test
   username: christopherg_test
-  password: Ruby2017test
+  password: <%= ENV['APP_DATABASE_PASSWORD_TEST'] %>
 
 production:
   <<: *default
@@ -30,6 +30,3 @@ production:
   username: cgmadmin
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
   
-  # database: rails_project_production
-  # username: rails
-  # password: <%= ENV['APP_DATABASE_PASSWORD'] %>
