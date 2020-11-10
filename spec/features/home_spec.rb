@@ -8,3 +8,11 @@ RSpec.feature "Homes", type: :feature do
     end
   end
 end
+
+=begin
+    scenario 'navigates to the bio page'
+      within '.u-nav-container' do
+        click_on 'Bio'
+      end  
+      expect(page).to have_content('Obsidian Global LLC')
+=end   
