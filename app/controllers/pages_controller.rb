@@ -11,11 +11,9 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    @pages = Page.all
   end
 
   # GET /pages/new
   def new
-    @page = Page.new
   end
 end
