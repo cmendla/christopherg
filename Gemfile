@@ -26,6 +26,7 @@ group :test do
   gem 'capybara', '~> 3.33.0', '< 4.0'
   gem 'capybara-screenshot'
   gem 'chromedriver-helper' # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'selenium-webdriver'
   gem 'simplecov', require: false
 end  
 
@@ -37,6 +38,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   # gem 'web-console', '~> 2.0'
   # TODO: add webconsole back
+  gem 'listen'
 
   gem 'rubocop', '~> 0.93.1', :require => false
   gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
