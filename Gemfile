@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 
 gem 'jquery-turbolinks'
-gem 'rails', '5.1.7'
+gem 'rails', '5.2'
 ruby '2.6.5'
 
-# gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
+gem 'bootsnap', '>= 1.1.0', require: false # Reduces boot times through caching; required in config/boot.rb
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
 gem 'nokogiri', '1.10.10'
@@ -21,9 +23,11 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 3.33.0'
-  gem 'simplecov', require: false
+  gem 'capybara', '~> 3.33.0', '< 4.0'
   gem 'capybara-screenshot'
+  gem 'chromedriver-helper' # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'selenium-webdriver'
+  gem 'simplecov', require: false
 end  
 
 group :doc do
@@ -34,6 +38,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   # gem 'web-console', '~> 2.0'
   # TODO: add webconsole back
+  gem 'listen'
 
   gem 'rubocop', '~> 0.93.1', :require => false
   gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
