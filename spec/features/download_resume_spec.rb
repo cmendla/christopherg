@@ -13,12 +13,12 @@ describe 'Download Resumes' do
           # expect(page).to have_content('Obsidian Global LLC')
 
         
-          click_on 'Download PDF'
+          click_link('Download PDF')
 
-          expect{ click_on 'Download PDF' }
-          .not_to raise_error(Capybara::Poltergeist::MouseEventFailed)
+          # expect{ click_on 'Download PDF' }
+          # .not_to raise_error(Capybara::Poltergeist::MouseEventFailed)
 
-          # expect( DownloadHelpers::download_content ).to include email_csv
+           expect( DownloadHelpers::download_content ).to include email_csv
         end
     #specify do
 
