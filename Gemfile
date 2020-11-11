@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jquery-turbolinks'
-gem 'rails', '5.1.4'
+gem 'rails', '5.1.5'
 ruby '2.6.5'
 
 # gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
