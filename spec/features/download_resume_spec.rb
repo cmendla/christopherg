@@ -18,7 +18,7 @@ describe 'Download Resumes' do
           # expect{ click_on 'Download PDF' }
           # .not_to raise_error(Capybara::Poltergeist::MouseEventFailed)
 
-           expect( DownloadHelpers::download_content ).to include email_csv
+           expect( DownloadHelpers::download_content ).to include 'pdf'
         end
     #specify do
 

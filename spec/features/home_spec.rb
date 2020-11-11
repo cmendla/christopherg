@@ -6,6 +6,14 @@ RSpec.feature "Homes", type: :feature do
       visit home_path
       expect(page).to have_content('This is the personal/professional site of Christopher G. Mendla')
     end
+
+    it 'navigates to the bio page' do
+      visit home_path
+      within '.u-nav-container' do
+        click_link('Bio')
+      end  
+      expect(page).to have_content('Obsidian Global LLC')
+    end  
   end
 end
 

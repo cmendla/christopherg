@@ -18,8 +18,8 @@ Capybara.register_driver :selenium do |app|
   profile['browser.download.folderList'] = 2
 
   # Suppress "open with" dialog
-  profile['browser.helperApps.neverAsk.saveToDisk'] = 'text/csv'
-  Capybara::Selenium::Driver.new(app, :browser => :firefox, :profile => profile)
+  profile['browser.helperApps.neverAsk.saveToDisk'] = 'text/csv,application/pdf,application/octet-stream'
+  Capybara::Selenium::Driver.new(app, :browser => :Chrome, :profile => profile)
 end
 
 
