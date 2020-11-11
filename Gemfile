@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jquery-turbolinks'
-gem 'rails', '5.1.6'
+gem 'rails', '5.1.7'
 ruby '2.6.5'
 
 # gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
@@ -21,7 +21,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '~> 3.33.0'
   gem 'simplecov', require: false
   gem 'capybara-screenshot'
 end  
