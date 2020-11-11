@@ -23,6 +23,7 @@ end
 group :test do
   gem 'capybara'
   gem 'simplecov', require: false
+  gem 'capybara-screenshot'
 end  
 
 group :doc do
