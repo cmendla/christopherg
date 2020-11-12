@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
-  config.require_master_key = true
+  # config.require_master_key = true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
@@ -72,20 +72,20 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
-  # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
   #  config.action_mailer.delivery_method = :sendmail
-  # host = 'christopherg.mendla.com'
-  # config.action_mailer.default_url_options = { :host => host }
-  # ActionMailer::Base.smtp_settings = {
-  #   :address => 'smtp.sendgrid.net',
-  #   :port => '587',
-  #   :authentication => :plain,
-  #   :user_name => ENV['SENDGRID_USERNAME'],
-  #    :password => ENV['SENDGRID_PASSWORD'],
-  #   :domain => 'mendla.com',
-  #  :enable_starttls_auto => true
-  # }
+  host = 'christopherg.mendla.com'
+  config.action_mailer.default_url_options = { :host => host }
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :authentication => :plain,
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'mendla.com',
+    :enable_starttls_auto => true
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
