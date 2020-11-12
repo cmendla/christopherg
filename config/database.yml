@@ -26,7 +26,8 @@ test:
 production:
   <<: *default
   host: ''
-  database: cgmadmin
-  username: cgmadmin
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  database: rails
+  username: rails
+  username: <%= Rails.application.credentials.dig(:production, :postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:production, :postgres_password) %> 
   
