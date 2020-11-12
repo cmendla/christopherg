@@ -10,7 +10,7 @@ gem 'bootsnap', '>= 1.1.0', require: false # Reduces boot times through caching;
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
 gem 'nokogiri', '1.10.10'
-gem 'pg', '1.2.2'
+gem 'pg', '0.18'
 gem 'puma', '5.0.2' # Use Puma as the app servber
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 gem 'turbolinks', '5.2.1' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -39,6 +39,7 @@ group :development do
   # gem 'web-console', '~> 2.0'
   # TODO: add webconsole back
   gem 'listen'
+
   gem 'rubocop', '~> 0.93.1', :require => false
   gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
