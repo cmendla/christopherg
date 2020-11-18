@@ -17,6 +17,16 @@
 /.metadata
 /.metadata/*
 
+
+# Ignore uploaded files in development
+/storage/*
+
+/node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
 # Ignore the public folder but not the documents folder
 public/*
 !public/documents
@@ -27,3 +37,6 @@ public/assets/*
 
 # ignore simplecov coverage folder
 /coverage/*
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
