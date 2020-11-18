@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// NOTE - require activestorage was removed for rails 5.2 as a temp fix
 
 //= require jquery
 //= require jquery_ujs
