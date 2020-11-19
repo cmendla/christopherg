@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'jquery-turbolinks'
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.1'
 ruby '2.6.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false # Reduces boot times through caching; required in config/boot.rb
