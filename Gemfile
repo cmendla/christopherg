@@ -25,9 +25,8 @@ end
 
 group :test do
   gem 'capybara', '~> 3.33.0' # Adds support for Capybara system testing and selenium driver
-  gem 'chromedriver-helper' # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'simplecov', require: false
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver' # replaces chromedriver-helper??
   gem 'capybara-screenshot'
 end  
 
@@ -39,6 +38,6 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   # gem 'web-console', '~> 2.0'
   # TODO: add webconsole back
-  gem 'listen'  #added for rails 5.2
+  gem 'listen'  # added for rails 5.2
   gem 'rubocop', '~> 0.93.1', :require => false
 end
