@@ -20,6 +20,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 11.1.3'
   gem 'rspec-rails', '~> 4.0.1'
+  gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
 
 group :test do
@@ -40,5 +41,4 @@ group :development do
   # TODO: add webconsole back
   gem 'listen'  #added for rails 5.2
   gem 'rubocop', '~> 0.93.1', :require => false
-  gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
