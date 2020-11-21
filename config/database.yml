@@ -11,8 +11,8 @@ default: &default
 development:
   <<: *default
   database: christopherg_dev
-  username: <%= Rails.application.credentials.development[:postgres_username] %>
-  password: <%= Rails.application.credentials.development[:postgres_password] %>
+  username: christopherg_dev
+  password: <%= ENV['APP_DATABASE_PASSWORD_DEV'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,13 +20,13 @@ development:
 test:
   <<: *default
   database: christopherg_test
-  username: <%= Rails.application.credentials.test[:postgres_username] %>
-  password: <%= Rails.application.credentials.test[:postgres_password] %>
+  username: christopherg_test
+  password: <%= ENV['APP_DATABASE_PASSWORD_TEST'] %>
 
 production:
   <<: *default
   host: ''
-  database: rails
-  username: <%= Rails.application.credentials.production[:postgres_username] %>
-  password: <%= Rails.application.credentials.production[:postgres_password] %>
+  database: cgmadmin
+  username: cgmadmin
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
   
