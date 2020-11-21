@@ -12,6 +12,7 @@
 //
 // NOTE - require activestorage was removed for rails 5.2 as a temp fix
 
+//= require activestorage
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
