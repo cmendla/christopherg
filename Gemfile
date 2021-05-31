@@ -19,12 +19,12 @@ gem 'uglifier', '4.2.0' # Use Uglifier as compressor for JavaScript assets
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 11.1.3'
-  gem 'rspec-rails', '~> 4.0.1'
+  gem 'rspec-rails', '~> 5.0.1'
   gem 'spring', '~> 2.1.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
 
 group :test do
-  gem 'capybara', '~> 3.33.0' # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 3.35.3' # Adds support for Capybara system testing and selenium driver
   gem 'simplecov', require: false
   gem 'selenium-webdriver' # replaces chromedriver-helper??
   gem 'capybara-screenshot'
