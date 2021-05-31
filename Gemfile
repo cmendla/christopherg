@@ -2,9 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'jquery-turbolinks'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
+gem 'rails', '5.2.4.5'
 ruby '2.6.5'
 
+gem "activerecord", ">= 5.2.4.5"
 gem 'bootsnap', '>= 1.1.0', require: false # Reduces boot times through caching; required in config/boot.rb
 # gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
