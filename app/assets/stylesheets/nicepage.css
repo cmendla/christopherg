@@ -15264,7 +15264,6 @@ html {
   font-size: 16px;
 }
 .u-body {
-  font-size: 1rem;
   line-height: 1.6;
 }
 .u-body h1,
@@ -15309,6 +15308,10 @@ p {
   margin-top: 0;
   padding: 0;
   margin-bottom: 0.5rem;
+  font-size: large !important;
+}
+li {
+  font-size: large !important;
 }
 .u-uppercase {
   text-transform: uppercase;
@@ -30234,7 +30237,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
- .u-header {background-image: linear-gradient(#bf404c, #73546f)}
+.u-header {background-image: linear-gradient(#bf404c, #73546f)}
 .u-header .u-sheet-1 {min-height: 281px}
 .u-header .u-text-1 {font-size: 1.5rem; font-weight: 700; margin: 38px 20px 0 683px}
 .u-header .u-image-1 {width: 130px; height: 156px; margin: -88px auto 0 -2px}
