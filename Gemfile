@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.
 gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
 gem 'nokogiri', '1.11.6'
 gem 'pg', '1.2.3'
-gem 'puma', '5.3.2' # Use Puma as the app servber
+gem 'puma', '5.5.1' # Use Puma as the app servber
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 gem 'turbolinks', '5.2.1' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'uglifier', '4.2.0' # Use Uglifier as compressor for JavaScript assets
