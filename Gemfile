@@ -9,7 +9,7 @@ gem 'bootsnap', '>= 1.1.0', require: false # Reduces boot times through caching;
 # gem 'coffee-rails', '4.2.2' # TODO: - see if coffeescript can be removed
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails', '4.4.0' # Use jquery as the JavaScript library
-gem 'nokogiri', '1.11.6'
+gem 'nokogiri', '1.13.9'
 gem 'pg', '1.2.3'
 gem 'puma', '5.3.2' # Use Puma as the app servber
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
